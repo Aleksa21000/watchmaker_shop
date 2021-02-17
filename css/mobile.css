@@ -1,0 +1,305 @@
+/* Section Features */
+#features .features-container{
+  grid-template-columns: 1fr;
+}
+
+/* Header-Home */
+#showcase .btn{
+  top: 70%;
+  left: 40%;
+}
+
+/* Services */
+#services .service-content{
+  display: none;
+}
+
+.icons .box{
+  margin:1rem 15px;
+  width: 100%;
+}
+
+.icons .box:hover .icon{
+  top: 20px;
+  left: 43.5%;
+}
+
+.icons .box .icon i{
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.icons .box:hover .content{
+  top: 100px;
+  left: 20px;
+  opacity: 1;
+}
+
+/* Logo's */
+.logos-home img{
+  width: 100px;
+  height: 50px;
+}
+
+.logos-home img:nth-child(3){
+  width: 150px;
+}
+
+/* Footer */
+#main-footer{
+  grid-template-areas: 
+  "box-1 box-2"
+  "box-3 box-4"
+  "b-border b-border"
+  "box-5 box-5";
+  grid-gap: 0.5rem;
+  padding: 0;
+  justify-content: center;
+}
+
+#main-footer .box{
+  margin: 2rem;
+}
+
+#main-footer .box-3 .btn{
+  margin-top: 1rem;
+}
+
+/* About Page */
+/* Who We Are */
+#about-us .imgbox{
+  display: none;
+}
+
+.about-flex .content{
+  width: 100%;
+  margin: 12rem 10rem;
+}
+
+/* width 768 */
+@media(max-width: 768px){
+  /* Contact Section */
+  #contact .flex-container{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #contact .content{
+    display: none;
+  }
+
+  /* Services */
+  .icons .box:hover .icon{
+    top: 20px;
+    left: 43%;
+  }
+  
+
+  /* Contact Page */
+  #contact-inner .flex-container{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* width 600 */
+@media(max-width: 600px){
+  /* Index Page */
+  /* Header-Home */
+#showcase .btn{
+  top: 70%;
+  left: 28%;
+}
+
+  /* Services */
+  .icons .box:hover .icon{
+    top: 20px;
+    left: 37%;
+  }
+
+  .icons .box{
+    width:100%;
+    height: calc(350px - 30px);
+    margin: 1rem 0;
+  }
+
+  /* Contact Section */
+  #contact .container > h1{
+    font-size: 2rem;
+  }
+  
+  #contact .container > h1 > .txt-1{
+    font-size: 2rem;
+  }
+
+  #contact .text-fields{
+    grid-template-areas: 
+    "name"
+    "email" 
+    "phone"
+    "message";
+  }
+
+  /* Logo's */
+  #logos .logos-home{
+    flex-direction: column;
+  }
+
+  .logos-home img{
+    width: 150px;
+    height: 80px;
+  }
+  
+  .logos-home img:nth-child(3){
+    width: 200px;
+  }
+
+  /* Footer */
+  #main-footer{
+    grid-template-areas: 
+    "box-1" 
+    "box-2"
+    "box-3" 
+    "box-4"
+    "b-border"
+    "box-5";
+  }
+
+  /* About Page */
+  #showcase-inner p{
+    display: none;
+  }
+
+  /* Who We Are */
+  .about-flex .content{
+    width: 100%;
+    margin:3rem 1rem;
+  }
+
+  /* Gallery Page */
+  #gallery-grid .grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  #gallery-grid .grid-container .imgbox:first-child{
+    grid-column: 0;
+    grid-row: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(2){
+    grid-column-start:0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(3){
+    grid-row-start: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(5){
+    grid-column-start: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(6){
+    grid-row-start: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(7){
+    grid-column-start: 0;
+    grid-row-start: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(9){
+    grid-column-start: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(10){
+    grid-row-start: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(11){
+    grid-row-start: 0;
+  }
+  
+  #gallery-grid .grid-container .imgbox:nth-child(12){
+    grid-column-start: 0;
+    grid-row-start: 0;
+  }
+
+  /* Contact Page */
+  #contact-inner .text-fields{
+    grid-template-areas: 
+    "name" 
+    "email" 
+    "phone"
+    "message";
+  }
+
+  #contact-inner .container > h1{
+    font-size: 2rem;
+  }
+  
+  #contact-inner .container > h1 > .txt-1{
+    font-size: 2rem;
+  }
+}
+
+/* width 320 */
+@media(max-width: 320px){
+  /* Header-Home */
+#showcase .btn{
+  top: 60%;
+  left: 24%;
+}
+
+  /* About section */
+  .about-features .card{
+    width: 100%;
+    height: 400px;
+    margin: 1rem 0;
+  }
+
+  /* Services */
+  #services .container > h1{
+    font-size: 2rem;
+  }
+  
+  #services .container > h1 > .txt-1{
+    font-size: 2rem;
+  }
+
+  .icons .box:hover .icon{
+    top: 20px;
+    left: 34%;
+  }
+
+  .icons .box{
+    width:100%;
+    height: calc(400px - 30px);
+    margin: 1rem 0;
+  }
+}
+
+/* Landscape 500px */
+@media (max-height: 500px){
+  /* Header-Home */
+  #showcase .btn{
+    top: 50%;
+    left: 39%;
+  }
+  /* About Page */
+  #showcase-inner p{
+    display: none;
+  }
+
+  /* Services */
+  .icons .box:hover .icon{
+    top: 20px;
+    left: 44%;
+  }
+}
